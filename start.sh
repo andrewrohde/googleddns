@@ -1,3 +1,4 @@
+#!/bin/sh
 printenv | grep 'DDNS' >> /etc/environment
 
 echo "SHELL=/bin/bash" >> /etc/cron.d/googleddns-cron
