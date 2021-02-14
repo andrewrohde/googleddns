@@ -31,12 +31,10 @@ callbackIPRequest = function(response) {
 
     response.on('end', function () {
         currentIP = ipResponse.ip;
-        console.log("IP received = " + currentIP)
         if (files.readPreviousIP() != currentIP ) {
             files.writePreviousIP(currentIP);
             updateIP(currentIP);                
-        } else 
-            console.log("Previous IP equals Current IP. IP not updated.");
+        } 
     });
 }
 
