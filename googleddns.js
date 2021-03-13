@@ -36,6 +36,10 @@ callbackIPRequest = function(response) {
             updateIP(currentIP);                
         } 
     });
+
+    response.on('error', function (error) {
+        console.log(error);
+    });
 }
 
 updateIP = function(ip) {
@@ -51,6 +55,10 @@ callbackIPUpdate = function(response) {
     });
 
     response.on('end', function () {});
+
+    response.on('error', function (error) {
+        console.log(error);
+    });
 
 };
 
