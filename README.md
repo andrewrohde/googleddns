@@ -1,9 +1,9 @@
 # Environment Variables
 
-    DDNS_DOMAIN
-    DDNS_USERNAME
-    DDNS_PASSWORD
-    DDNS_FREQUENCY_MIN
+    DDNS_DOMAIN - Google Domains DDNS domain
+    DDNS_USERNAME - Google Domains DDNS username
+    DDNS_PASSWORD - Google Domains DDNS password
+    DDNS_FREQUENCY_MIN - Cron job frequency
 
 # Run command
 
