@@ -7,7 +7,7 @@
 
 # Run command
 
-    docker run -e DDNS_DOMAIN={your DDNS domain} -e DDNS_PASSWORD={your DDNS password} -e DDNS_USERNAME={your DDNS username} -e DDNS_FREQUENCY_MIN={number of minutes for CRON job} -d atrohde/googleddns
+    docker run -e DDNS_DOMAIN={your DDNS domain} -e DDNS_PASSWORD={your DDNS password} -e DDNS_USERNAME={your DDNS username} -e DDNS_FREQUENCY_MIN={number of minutes for CRON job} --restart always --name googleddns -d atrohde/googleddns
 
 
 # Update Frequncy
